@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('fonts/BebasNeue-Regular.woff2') format('woff2'),
+       url('fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background-color: #121212;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15vw;
+    margin: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6vw;
+    margin: 0px;
+    text-align: center;
+}
+
+.amarelo {
+    color: yellow;
+}
+
+.vermelho {
+    color: red;
+}
+
+.azul {
+    color: blue;
+}
