@@ -8,17 +8,50 @@
 
 body {
     background-color: #121212;
-    align-self: center;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+}
+
+nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-topo {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    gap: 10px 20px;
+}
+
+.menu-topo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+@media (max-width: 700px) {
+    .menu-topo a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-topo a {
+        font-size: 12px;
+    }
+}
+
+.menu-topo a:hover {
+    color: yellow;
 }
 
 h1 {
     color: white;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 15vw;
-    margin: 0px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
     text-align: center;
 }
 
@@ -33,11 +66,61 @@ h2 {
 .amarelo {
     color: yellow;
 }
-
 .vermelho {
     color: red;
 }
-
 .azul {
     color: blue;
+}
+
+h3 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10vw;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.sobre {
+    padding: 40px 20px;
+    max-width: 80vw;
+    margin: 20px auto;
+    color: white;
+    background-color: #1f1f1f;
+    gap: 10px 20px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre h3 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .sobre h3 {
+        font-size: 40px;
+    }
+    .sobre p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre h3 {
+        font-size: 30px;
+    }
+    .sobre p {
+        font-size: 20px;
+    }
 }
