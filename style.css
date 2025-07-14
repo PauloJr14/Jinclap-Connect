@@ -49,14 +49,25 @@ nav {
 
 h1 {
     color: white;
+    text-shadow: 
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 15vw;
-    margin: 20px 0 0 0;
+    font-size: 16vw;
+    margin: 0px;
     text-align: center;
 }
 
 h2 {
     color: white;
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px  2px 0 black,
+        2px  2px 0 black;
+
     font-family: 'Bebas Neue', sans-serif;
     font-size: 6vw;
     margin: 0px;
@@ -123,4 +134,52 @@ h3 {
     .sobre p {
         font-size: 20px;
     }
+}
+
+.hero {
+    position: relative;
+    height: 80vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    animation: carousel 20s infinite;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+@keyframes carousel {
+  0%    { background-image: url('fotos/foto1.jpg'); }
+  16%   { background-image: url('fotos/foto2.jpg'); }
+  33%   { background-image: url('fotos/foto3.jpg'); }
+  50%   { background-image: url('fotos/foto4.jpg'); }
+  66%   { background-image: url('fotos/foto5.jpg'); }
+  83%   { background-image: url('fotos/foto6.jpg'); }
+  100%  { background-image: url('fotos/foto1.jpg'); }
+}
+
+.apoio {
+    flex-direction: row;
+}
+
+.apoio img{
+    width: 100px;
 }
