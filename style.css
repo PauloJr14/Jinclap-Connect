@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #121212;
     font-family: 'Bebas Neue', sans-serif;
@@ -31,18 +35,6 @@ nav {
     transition: color 0.3s;
 }
 
-@media (max-width: 700px) {
-    .menu-topo a {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 500px) {
-    .menu-topo a {
-        font-size: 12px;
-    }
-}
-
 .menu-topo a:hover {
     color: yellow;
 }
@@ -57,6 +49,7 @@ h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 16vw;
     margin: 0px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -108,7 +101,7 @@ h3 {
 
 .sobre h3 {
     font-size: 50px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -116,24 +109,6 @@ h3 {
     font-size: 30px;
     line-height: 1.6;
     text-align: center;
-}
-
-@media (max-width: 1024px) {
-    .sobre h3 {
-        font-size: 40px;
-    }
-    .sobre p {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 600px) {
-    .sobre h3 {
-        font-size: 30px;
-    }
-    .sobre p {
-        font-size: 20px;
-    }
 }
 
 .hero {
@@ -159,21 +134,21 @@ h3 {
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: white;
-  padding: 20px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
 @keyframes carousel {
-  0%    { background-image: url('fotos/foto1.jpg'); }
-  16%   { background-image: url('fotos/foto2.jpg'); }
-  33%   { background-image: url('fotos/foto3.jpg'); }
-  50%   { background-image: url('fotos/foto4.jpg'); }
-  66%   { background-image: url('fotos/foto5.jpg'); }
-  83%   { background-image: url('fotos/foto6.jpg'); }
-  100%  { background-image: url('fotos/foto1.jpg'); }
+    0%    { background-image: url('fotos/foto1.jpg'); }
+    16%   { background-image: url('fotos/foto2.jpg'); }
+    33%   { background-image: url('fotos/foto3.jpg'); }
+    50%   { background-image: url('fotos/foto4.jpg'); }
+    66%   { background-image: url('fotos/foto5.jpg'); }
+    83%   { background-image: url('fotos/foto6.jpg'); }
+    100%  { background-image: url('fotos/foto1.jpg'); }
 }
 
 .apoio {
@@ -182,4 +157,116 @@ h3 {
 
 .apoio img{
     width: 100px;
+}
+
+#arquivo {
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#arquivo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.arquivos {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    height: 30vw;
+    width: 30vw;
+}
+
+.arquivos h3 {
+    font-size: 12vw;
+    margin: 0px;
+}
+
+.arquivos p {
+    font-size: 4.2vw;
+    margin: 0px;
+}
+
+h4 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10vw;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.camt {
+    margin-top: 0px;
+}
+
+.cam1 {
+    margin: 0px;
+    font-size: 40px;
+    color: gold;
+}
+
+.cam2 {
+    margin: 0px;
+    color: silver;
+}
+
+@media (max-width: 700px) {
+    .menu-topo a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-topo a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sobre h3 {
+        font-size: 40px;
+    }
+    .sobre p {
+        font-size: 25px;
+    }
+    .sobre h4 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre h3 {
+        font-size: 30px;
+    }
+    .sobre p {
+        font-size: 20px;
+    }
+    .sobre h4 {
+        font-size: 25px;
+    }
+}
+
+#horizontal {
+    display: flex;
+    flex-direction: row;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    min-height: auto;
+    padding: 10px;
+}
+
+#horizontal h3 {
+    font-size: 4vw;
+    margin: 0px;
+}
+
+#horizontal h3 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
