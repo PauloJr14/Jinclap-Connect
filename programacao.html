@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="fotos/logo.png">
+    <script src="programacao.js"></script>
     <title>Jinclap Connect</title>
 </head>
 
@@ -30,5 +31,716 @@
             <span class="azul">Resultados</span>
         </h2>
     </header>
+
+    <nav class="sobre" id="horizontal">
+        <div class="dias-scroll">
+            <button class="dia-btn active" onclick="mostrarDia('dia1', this)">30/07</button>
+            <button class="dia-btn" onclick="mostrarDia('dia2', this)">31/07</button>
+            <button class="dia-btn" onclick="mostrarDia('dia3', this)">01/08</button>
+            <button class="dia-btn" onclick="mostrarDia('dia4', this)">04/08</button>
+            <button class="dia-btn" onclick="mostrarDia('dia5', this)">05/08</button>
+            <button class="dia-btn" onclick="mostrarDia('dia6', this)">06/08</button>
+            <button class="dia-btn" onclick="mostrarDia('dia7', this)">07/08</button>
+            <button class="dia-btn" onclick="mostrarDia('dia8', this)">08/08</button>
+            <button class="dia-btn" onclick="mostrarDia('dia9', this)">11/08</button>
+        </div>
+    </nav>
+
+    <article id="dia1" class="dia" style="display: block;">
+        <nav class="sobre">
+            <h3>DIA 1 - 30/07</h3>
+            <nav class="horizontal">
+                <h3><a href="#quadra1">⚽</a></h3>
+                <h3><a href="#aberto1">🏸</a></h3>
+                <h3><a href="#quiosque1">🎲</a></h3>
+                <h3><a href="#console1">🎮</a></h3>
+                <h3><a href="#virtuais1">📱</a></h3>
+                <h3><a href="#tabuleiros1">♟️</a></h3>
+            </nav>
+        </nav>
+
+        <nav class="sobre" id="quadra1">
+            <h3>Quadra</h3>
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>☄️ Queimado (Nv1)</span>
+                    <span>⏰ 10:20 - 10:30</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Furia.jpg" alt="Fúria">
+                        <p>Fúria</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Porto.jpg" alt="Porto">
+                        <p>Porto</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>☄️ Queimado (NV1)</span>
+                    <span>⏰ 10:20 - 10:30</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Liverpool.jpg" alt="Liverpool">
+                        <p>Liverpool</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img alt="Lendas do Fogo">
+                        <p>Lendas do Fogo</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🏀 Basquete (NV3)</span>
+                    <span>⏰ 10:30 - 10:45</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Napoli.jpg" alt="Napoli">
+                        <p>Napoli</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Stars.jpg" alt="Stars">
+                        <p>Stars</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🏀 Basquete (NV3)</span>
+                    <span>⏰ 10:30 - 10:45</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Real.jpg" alt="Real">
+                        <p>Real</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Barça.jpg" alt="Barça">
+                        <p>Barça</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🏐 Vôlei (NV2)</span>
+                    <span>⏰ 10:45 - 11:00</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Chelsea.jpg" alt="Chelsea">
+                        <p>Chelsea</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Ajax.jpg" alt="Ajax">
+                        <p>Ajax</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🏐 Vôlei (NV3)</span>
+                    <span>⏰ 11:00 - 11:15</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Real.jpg" alt="Real">
+                        <p>Real</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Arsenal.jpg" alt="Arsenal">
+                        <p>Arsenal 2</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🏐 X2 (NV2)</span>
+                    <span>⏰ 11:15 - 11:25</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Jhonnes.jpg" alt="Jhonnes">
+                        <p>Jhonnes</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img alt="Mortos">
+                        <p>Mortos</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚽ FUTSAL (NV1)</span>
+                    <span>⏰ 11:25 - 11:40</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Furia.jpg" alt="Fúria">
+                        <p>Fúria</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Liverpool.jpg" alt="Liverpool">
+                        <p>Liverpool</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚽ FUTSAL (NV2)</span>
+                    <span>⏰ 11:40 - 11:55</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Ajax.jpg" alt="Ajax">
+                        <p>Ajax</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Inter.jpg" alt="Inter">
+                        <p>Inter</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚽ FUTSAL (NV3)</span>
+                    <span>⏰ 11:55 - 12:20</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Real.jpg" alt="Real">
+                        <p>Real</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Arsenal.jpg" alt="Arsenal">
+                        <p>Arsenal</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚽ FUTSAL (NV3 FEM)</span>
+                    <span>⏰ 12:20 - 12:40</span>
+                </div>
+                <nav class="confronto">
+                    <div class="time">
+                        <img src="escudos/Stars.jpg" alt="Stars">
+                        <p>Stars</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <img src="escudos/Napoli.jpg" alt="Napoli">
+                        <p>Napoli</p>
+                    </div>
+                </nav>
+            </nav>
+        </nav>
+
+        <nav class="sobre" id="aberto1">
+            <h3>Aberto</h3>
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🎯 FUTMESA</span>
+                    <span>⏰ 10:20 - 10:30</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>HIARLLY/ALEJANDRO</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>LUCAS/VINICIUS</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🎯 FUTMESA</span>
+                    <span>⏰ 10:30 - 10:45</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>CARLOS H./J. MIGUEL</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>LUIS/MIGUEL</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🎯 FUTMESA</span>
+                    <span>⏰ 10:45 - 11:00</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>REGIS/LUCAS</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>LUIS, LEÃO, VIANA</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🎯 FUTMESA</span>
+                    <span>⏰ 11:00 - 11:15</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>EDUARDO/CALEBE</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>ÁLVARO/LUCAS</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🎯 FUTMESA</span>
+                    <span>⏰ 11:15 - 11:30</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>VITOR/NICOLAS</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>JESUS/LUIS</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🏸 BADMINTON</span>
+                    <span>⏰ 11:30 - 11:45</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>RIKIELLY/EVELLYN</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>RIKELMY/EDUARDO</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🏸 BADMINTON</span>
+                    <span>⏰ 11:45 - 12:00</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>CÉSAR/RENAN</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>LUÍS/VIANA</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>🎯 FUTMESA</span>
+                    <span>⏰ 12:00 - 12:15</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>HIARLLY/ALEJ. ou LUCAS/VINI.</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>HEIT./JORGE</p>
+                    </div>
+                </nav>
+            </nav>
+        </nav>
+
+        <nav class="sobre" id="quiosque1">
+            <h3>Quiosque</h3>
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚫ Dominó (Nv3)</span>
+                    <span>⏰ 11:00 - 11:15</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>Paulo V e Tiago Augusto</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>Guilherme e George</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚫ Dominó (Nv3)</span>
+                    <span>⏰ 11:00 - 11:15</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>M. Leão e Carlos Henrique</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>Luiz Henrique e Anderson</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚫ Dominó (Nv3)</span>
+                    <span>⏰ 11:15 - 11:30</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>Raylander e Guilherme</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>José Thiago e Elgenio</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚫ Dominó (Nv3)</span>
+                    <span>⏰ 11:15 - 11:30</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>Maisa e Julia</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>Gabriel e Rayanne</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚫ Dominó (Nv3)</span>
+                    <span>⏰ 11:30 - 11:45</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>Miguel F. e João Gabriel</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>Ana Beatriz e Larissa</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚫ Dominó (Nv3)</span>
+                    <span>⏰ 11:30 - 11:45</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>Raquel e Laraina</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>Lucas Ferreira e Ariel</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚫ Dominó (Nv3)</span>
+                    <span>⏰ 11:45 - 12:00</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>Yarllison e Emanuelly</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>Heitor e Genivaldo</p>
+                    </div>
+                </nav>
+            </nav>
+
+            <nav class="jogo">
+                <div class="titulo-jogo">
+                    <span>⚫ Dominó (Nv3)</span>
+                    <span>⏰ 11:45 - 12:00</span>
+                </div>
+                <nav class="confronto sem-logo">
+                    <div class="time">
+                        <p>Álvaro e Luis</p>
+                    </div>
+
+                    <div class="vs">
+                        <h3>VS</h3>
+                    </div>
+
+                    <div class="time">
+                        <p>Neves e Geyzianne</p>
+                    </div>
+                </nav>
+            </nav>
+        </nav>
+
+
+        <nav class="sobre" id="console1">
+            <h3>Console</h3>
+        </nav>
+
+        <nav class="sobre" id="virtuais1">
+            <h3>Virtuais</h3>
+        </nav>
+
+        <nav class="sobre" id="tabuleiros1">
+            <h3>Tabuleiros</h3>
+        </nav>
+    </article>
+
+    <article id="dia2" class="dia" style="display: none;">
+        <nav class="sobre">
+            <h3>DIA 2 - 31/07</h3>
+            <nav class="horizontal">
+                <h3><a href="#quadra2">⚽</a></h3>
+                <h3><a href="#aberto2">🏸</a></h3>
+                <h3><a href="#quiosque2">🎲</a></h3>
+                <h3><a href="#console2">🎮</a></h3>
+                <h3><a href="#virtuais2">📱</a></h3>
+                <h3><a href="#tabuleiros2">♟️</a></h3>
+                <h3><a href="#patrimonio2">🏓</a></h3>
+            </nav>            
+        </nav>
+    </article>
+
+    <article id="dia3" class="dia" style="display: none;">
+        <nav class="sobre">
+            <h3>DIA 3 - 01/08</h3>
+            <nav class="horizontal">
+                <h3><a href="#quadra3">⚽</a></h3>
+                <h3><a href="#aberto3">🏸</a></h3>
+                <h3><a href="#quiosque3">🎲</a></h3>
+                <h3><a href="#console3">🎮</a></h3>
+                <h3><a href="#tabuleiros3">♟️</a></h3>
+                <h3><a href="#patrimonio3">🏓</a></h3>
+            </nav>            
+        </nav>
+    </article>
+
+    <article id="dia4" class="dia" style="display: none;">
+        <nav class="sobre">
+            <h3>DIA 4 - 04/08</h3>
+            <nav class="horizontal">
+                <h3><a href="#quadra4">⚽</a></h3>
+                <h3><a href="#aberto4">🏸</a></h3>
+                <h3><a href="#quiosque4">🎲</a></h3>
+                <h3><a href="#console4">🎮</a></h3>
+                <h3><a href="#tabuleiros4">♟️</a></h3>
+                <h3><a href="#patrimonio4">🏓</a></h3>
+            </nav>            
+        </nav>
+    </article>
+
+    <article id="dia5" class="dia" style="display: none;">
+        <nav class="sobre">
+            <h3>DIA 5 - 05/08</h3>
+            <nav class="horizontal">
+                <h3><a href="#quadra5">⚽</a></h3>
+                <h3><a href="#aberto5">🏸</a></h3>
+                <h3><a href="#quiosque5">🎲</a></h3>
+                <h3><a href="#console5">🎮</a></h3>
+                <h3><a href="#virtuais5">📱</a></h3>
+                <h3><a href="#patrimonio5">🏓</a></h3>
+            </nav>            
+        </nav>
+    </article>
+
+    <article id="dia6" class="dia" style="display: none;">
+        <nav class="sobre">
+            <h3>DIA 6 - 06/08</h3>
+            <nav class="horizontal">
+                <h3><a href="#quadra6">⚽</a></h3>
+                <h3><a href="#aberto6">🏸</a></h3>
+                <h3><a href="#virtuais6">📱</a></h3>
+                <h3><a href="#patrimonio6">🏓</a></h3>
+            </nav>            
+        </nav>
+    </article>
+
+    <article id="dia7" class="dia" style="display: none;">
+        <nav class="sobre">
+            <h3>DIA 7 - 07/08</h3>
+            <nav class="horizontal">
+                <h3><a href="#quadra7">⚽</a></h3>
+                <h3><a href="#quiosque7">🎲</a></h3>
+                <h3><a href="#console7">🎮</a></h3>
+                <h3><a href="#patrimonio7">🏓</a></h3>
+            </nav>            
+        </nav>
+    </article>
+
+    <article id="dia8" class="dia" style="display: none;">
+        <nav class="sobre">
+            <h3>DIA 8 - 08/08</h3>
+            <nav class="horizontal">
+                <h3><a href="#quadra8">⚽</a></h3>
+                <h3><a href="#console8">🎮</a></h3>
+            </nav>            
+        </nav>
+    </article>
+
+    <article id="dia9" class="dia" style="display: none;">
+        <nav class="sobre">
+            <h3>DIA 9 - 11/08</h3>
+            <p>Programação a ser divulgada</p>            
+        </nav>
+    </article>
+
 </body>
 </html>
