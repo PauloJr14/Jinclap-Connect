@@ -67,16 +67,6 @@ h2 {
     text-align: center;
 }
 
-.amarelo {
-    color: yellow;
-}
-.vermelho {
-    color: red;
-}
-.azul {
-    color: blue;
-}
-
 h3 {
     color: white;
     font-family: 'Bebas Neue', sans-serif;
@@ -435,4 +425,20 @@ header h3 {
     margin: 0;
     font-size: 24px;
     color: #fff;
+}
+
+.amarelo {
+    color: yellow;
+}
+
+.vermelho {
+    color: red;
+}
+
+.azul {
+    color: blue;
+}
+
+.verde {
+    color: rgb(72, 255, 0);
 }
