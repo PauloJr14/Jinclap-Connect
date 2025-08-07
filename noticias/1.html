@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulo José">
+    <meta name="keywords" content="Jinclap,Connect,Escola,de,Aplicação,Professor,Chaves">
+    <meta name="description" content="Conectando Você Ao Maior Evento">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../fotos/logo.png">
+    <title>Jinclap Connect</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <script src="../palpites8.js"></script>
+</head>
+
+<body>
+    <nav class="menu-topo">
+        <a href="../index.html">🏠 Início</a>
+        <a href="../noticias.html">📰 Notícias</a>
+        <a href="../programacao.html">📅 Programação</a>
+        <a href="../chaveamentos.html">📊 Chaveamentos</a>
+        <a href="../campeoes.html">🏆 Campeões</a>
+        <a href="../arquivos.html">📁 Arquivos</a>
+    </nav>
+
+    <header>
+        <h1>Jinclap Connect</h1>
+        <h2>
+            <span class="amarelo">Estatísticas</span>
+            <scan class="vermelho">08</scan>
+            <scan class="azul">/08</scan>
+        </h2>
+        <h3>
+            Faça agora mesmo os palpites nos jogos do dia 8!
+        </h3>
+    </header>
+
+    <div id="palpites" class="palpites-container">
+        <div class="palpites-container__jogo-card" data-jogo="jogo1">
+            <h3 class="palpites-container__titulo">Semi 1 - Futsal Nível 3</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Real.jpg" alt="Real" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo1', 'timeA')">Real</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img alt="Seleção" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo1', 'timeB')">Seleção</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo1" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Semi 2 - Futsal Nível 3</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Napoli.jpg" alt="Napoli" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo2', 'timeA')">Napoli</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Arsenal.jpg" alt="Arsenal" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo2', 'timeB')">Arsenal</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo2" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Final - Vôlei Nível 2</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Napoli.jpg" alt="Napoli" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo3', 'timeA')">???</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Arsenal.jpg" alt="Arsenal" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo3', 'timeB')">???</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo3" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Final - Vôlei Nível 3</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Napoli.jpg" alt="Napoli" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo4', 'timeA')">???</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Arsenal.jpg" alt="Arsenal" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo4', 'timeB')">???</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo4" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Final - Basquete Nível 2</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Barça.jpg" alt="Barça" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo5', 'timeA')">???</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Napoli.jpg" alt="Napoli" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo5', 'timeB')">???</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo5" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Final - Basquete Nível 3</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Barça.jpg" alt="Barça" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo6', 'timeA')">Barça</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Napoli.jpg" alt="Napoli" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo6', 'timeB')">Napoli</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo6" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Final - Queimado Nível 3</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Barça.jpg" alt="Barça" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo7', 'timeA')">???</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Napoli.jpg" alt="Napoli" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo7', 'timeB')">???</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo7" class="barra-emoji"></div>
+        </div>
+    </div>
+</body>
+</html>
