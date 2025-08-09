@@ -368,8 +368,8 @@ header h3 {
 }
 
 .dia-btn.active {
-    background-color: #28a745;
-    box-shadow: 0 0 10px rgba(40, 167, 69, 0.6);
+    background-color: #006eff;
+    box-shadow: 0 0 10px rgba(50, 163, 255, 0.6);
 }
 
 .jogo {

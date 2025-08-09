@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulo José">
+    <meta name="keywords" content="Jinclap,Connect,Escola,de,Aplicação,Professor,Chaves">
+    <meta name="description" content="Conectando Você Ao Maior Evento">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../fotos/logo.png">
+    <title>Jinclap Connect</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <script src="../palpites8.js"></script>
+</head>
+
+<body>
+    <nav class="menu-topo">
+        <a href="../index.html">🏠 Início</a>
+        <a href="../noticias.html">📰 Notícias</a>
+        <a href="../programacao.html">📅 Programação</a>
+        <a href="../chaveamentos.html">📊 Chaveamentos</a>
+        <a href="../campeoes.html">🏆 Campeões</a>
+        <a href="../arquivos.html">📁 Arquivos</a>
+    </nav>
+
+    <header>
+        <h1>Jinclap Connect</h1>
+        <h2>
+            <span class="amarelo">Palpites</span>
+            <scan class="vermelho">11</scan>
+            <scan class="azul">/08</scan>
+        </h2>
+        <h3>
+            Faça agora mesmo os palpites nos jogos do dia 11!
+        </h3>
+    </header>
+    
+    <div id="palpites" class="palpites-container">
+        <div class="palpites-container__jogo-card" data-jogo="jogo1">
+            <h3 class="palpites-container__titulo">Final - Futsal Nível 1</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Liverpool.jpg" alt="Liverpool" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo8', 'timeA')">Liverpool</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Porto.jpg" alt="Porto" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo8', 'timeB')">Porto</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo8" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Final - Futsal Nível 2</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Inter.jpg" alt="Inter" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo9', 'timeA')">Inter</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Ajax.jpg" alt="Ajax" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo9', 'timeB')">Ajax</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo9" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Final - Futsal Nível 3</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img alt="Seleção" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo10', 'timeA')">Seleção</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Arsenal.jpg" alt="Arsenal" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo10', 'timeB')">Arsenal</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo10" class="barra-emoji"></div>
+
+            <h3 class="palpites-container__titulo">Final - Futsal Feminino</h3>
+            <div class="palpites-container__times">
+                <div class="palpites-container__time">
+                    <img src="../escudos/Napoli.jpg" alt="Napoli" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo11', 'timeA')">Napoli</button>
+                </div>
+                <div class="palpites-container__time">
+                    <img src="../escudos/Stars.jpg" alt="Stars" class="palpites-container__time-img">
+                    <button class="palpites-container__time-btn" onclick="votar('jogo11', 'timeB')">Stars</button>
+                </div>
+            </div>
+
+            <div id="barra-jogo11" class="barra-emoji"></div>
+        </div>
+    </div>
+</body>
+</html>

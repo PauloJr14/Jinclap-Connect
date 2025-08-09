@@ -47,7 +47,7 @@ function atualizarBarra(jogoId, votos) {
 }
 
 function iniciarListeners() {
-  for(let i = 1; i <= 7; i++) {
+  for(let i = 1; i <= 11; i++) {
     const jogoId = 'jogo' + i;
     db.ref('palpites/' + jogoId).on('value', snapshot => {
       const votos = snapshot.val() || { timeA: 0, timeB: 0 };

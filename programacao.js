@@ -10,5 +10,5 @@ function mostrarDia(diaId, botaoClicado) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    mostrarDia('dia1', document.querySelector('.dia-btn'));
+    mostrarDia('dia9', document.querySelector('.dia-btn'));
 });
